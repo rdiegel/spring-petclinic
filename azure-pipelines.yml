@@ -34,6 +34,8 @@ stages:
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'pom.xml'
+        javaHomeOption: 'JDKVersion' 
+        jdkVersionOption: '1.17'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
